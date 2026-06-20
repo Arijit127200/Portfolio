@@ -1,0 +1,326 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arijit Datta | Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Arijit Datta</h1>
+                <h4 class="poppinss">Django Developer & Python Programmer</h4>
+
+                <a href="{% static 'pdf/Arijit_Datta_CV_WebDev.pdf' %}" target="_blank">
+                    <button class="btn poppins">Resume</button>
+                </a>
+
+                <a class="btn live poppins"
+                    href="mailto:arijitdatta005@gmail.com">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/ME_avatar.png' %}" alt="Arijit Datta">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+
+        <div class="about-container flex s-around">
+
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/images_laptop.png' %}" alt="Laptop"
+                    style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Arijit Datta</h1>
+
+                    <p class="t-white poppins">
+                        I am a Computer Science graduate and currently pursuing
+                        M.Tech in Communication & Signal Processing at IIEST
+                        Shibpur. I specialize in Python, Django, REST API
+                        Development, PostgreSQL, JavaScript, and React.js.
+
+                        I have worked as a Data Analyst Intern at Celebal
+                        Technologies and a Research Intern at Jadavpur University.
+                        My passion lies in building scalable web applications,
+                        backend systems, and data-driven solutions using modern
+                        technologies.
+                    </p>
+
+                    <a class="btn"
+                        href="mailto:arijitdatta005@gmail.com">
+                        Hire Me
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+
+        <div class="services-container flex s-around h-50">
+
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/skills.png' %}" alt="Skills">
+            </div>
+
+            <div class="skills-right flex items-center">
+
+                <div class="skillss-container">
+
+                    <div class="python bar p-relative">
+                        <span class="bar-content left t-white">Python</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+
+                    <div class="java bar p-relative">
+                        <span class="bar-content left t-white">Django</span>
+                        <span class="bar-content right-skills t-white">85%</span>
+                    </div>
+
+                    <div class="html bar p-relative">
+                        <span class="bar-content left t-white">HTML5 / CSS3</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+
+                    <div class="css bar p-relative">
+                        <span class="bar-content left t-white">JavaScript</span>
+                        <span class="bar-content right-skills t-white">80%</span>
+                    </div>
+
+                    <div class="js bar p-relative">
+                        <span class="bar-content left t-white">React.js</span>
+                        <span class="bar-content right-skills t-white">75%</span>
+                    </div>
+
+                    <div class="mysql bar p-relative">
+                        <span class="bar-content left t-white">PostgreSQL / MySQL</span>
+                        <span class="bar-content right-skills t-white">80%</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects">
+
+        <h1 class="t-center my-2 t-white f-2">Projects</h1>
+
+        <div class="projects-container flex s-center">
+
+            <!-- Project 1 -->
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">
+                    Breast Cancer Detection System
+                </h1>
+
+                <p class="t-white poppins">
+                    Built a deep learning model trained on 100,000+ medical
+                    images achieving 99% classification accuracy. Developed
+                    a Flask REST API backend and integrated a frontend
+                    interface for prediction and visualization.
+                </p>
+
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Arijit127200"
+                        target="_blank"
+                        class="btn mx-1 m-top">
+                        GitHub
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">
+                    Number Plate & Face Recognition System
+                </h1>
+
+                <p class="t-white poppins">
+                    Developed a real-time recognition system using Python,
+                    OpenCV and TensorFlow. Integrated MySQL for storing
+                    and retrieving recognized records with an overall
+                    accuracy of 95%.
+                </p>
+
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Arijit127200"
+                        target="_blank"
+                        class="btn mx-1 m-top">
+                        GitHub
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Project 3 -->
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">
+                    Customer Churn Prediction Dashboard
+                </h1>
+
+                <p class="t-white poppins">
+                    Built an 84% accuracy predictive model and interactive
+                    dashboard for business insights. Performed feature
+                    engineering, EDA and preprocessing on large customer
+                    datasets.
+                </p>
+
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Arijit127200"
+                        target="_blank"
+                        class="btn mx-1 m-top">
+                        GitHub
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="m-b-1">
+
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+
+        <div class="contact-container flex s-around items-centers">
+
+            <div class="form" id="contactForm">
+
+                <form method="post" action="{% url 'contact' %}">
+                    {% csrf_token %}
+
+                    <div class="name form-div">
+                        <input type="text"
+                            name="name"
+                            class="poppins"
+                            placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email"
+                            name="email"
+                            class="poppins"
+                            placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="text"
+                            name="number"
+                            class="poppins"
+                            placeholder="Enter Your Phone"
+                            required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="content"
+                            cols="30"
+                            rows="10"
+                            class="poppins"
+                            placeholder="Enter Message"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="btn poppins">
+                        Send
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#Projects" class="poppinss">Projects</a></li>
+        </ul>
+
+        <ul class="flex s-center w-80 font-awesome">
+
+            <a href="https://www.linkedin.com/in/arijit3-datta/"
+                target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+
+            <a href="https://github.com/Arijit127200"
+                target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+
+            <a href="mailto:arijitdatta005@gmail.com">
+                <li><i class="fa-solid fa-envelope"></i></li>
+            </a>
+
+        </ul>
+
+        <p class="t-center my-2 poppins">
+            &copy; 2025 All Rights Reserved -
+            <span class="cpy-white poppins">
+                Arijit Datta
+            </span>
+        </p>
+
+    </footer>
+
+</body>
+</html>
